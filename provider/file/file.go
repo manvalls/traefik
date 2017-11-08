@@ -7,10 +7,10 @@ import (
 	"strings"
 
 	"github.com/BurntSushi/toml"
-	"github.com/containous/traefik/log"
-	"github.com/containous/traefik/provider"
-	"github.com/containous/traefik/safe"
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/log"
+	"github.com/manvalls/traefik/provider"
+	"github.com/manvalls/traefik/safe"
+	"github.com/manvalls/traefik/types"
 	"gopkg.in/fsnotify.v1"
 )
 

@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/types"
 	"github.com/docker/libkv/store"
 )
 

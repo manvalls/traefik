@@ -4,8 +4,8 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/containous/traefik/types"
 	"github.com/docker/libkv/store"
+	"github.com/manvalls/traefik/types"
 )
 
 type KvMock struct {
@@ -33,7 +33,7 @@ func (s *Mock) Put(key string, value []byte, opts *store.WriteOptions) error {
 	return errors.New("Put not supported")
 }
 
-func (s *Mock) Get(key string) (*store.KVPair, error) {
+func (s *Mock) Get(key string, opts *store.ReadOptions) (*store.KVPair, error) {
 	if err := s.Error.Get; err != nil {
 		return nil, err
 	}
@@ -50,7 +50,7 @@ func (s *Mock) Delete(key string) error {
 }
 
 // Exists mock
-func (s *Mock) Exists(key string) (bool, error) {
+func (s *Mock) Exists(key string, opts *store.ReadOptions) (bool, error) {
 	if err := s.Error.Get; err != nil {
 		return false, err
 	}
@@ -63,12 +63,12 @@ func (s *Mock) Exists(key string) (bool, error) {
 }
 
 // Watch mock
-func (s *Mock) Watch(key string, stopCh <-chan struct{}) (<-chan *store.KVPair, error) {
+func (s *Mock) Watch(key string, stopCh <-chan struct{}, opts *store.ReadOptions) (<-chan *store.KVPair, error) {
 	return nil, errors.New("Watch not supported")
 }
 
 // WatchTree mock
-func (s *Mock) WatchTree(prefix string, stopCh <-chan struct{}) (<-chan []*store.KVPair, error) {
+func (s *Mock) WatchTree(prefix string, stopCh <-chan struct{}, opts *store.ReadOptions) (<-chan []*store.KVPair, error) {
 	return s.WatchTreeMethod(), nil
 }
 
@@ -78,7 +78,7 @@ func (s *Mock) NewLock(key string, options *store.LockOptions) (store.Locker, er
 }
 
 // List mock
-func (s *Mock) List(prefix string) ([]*store.KVPair, error) {
+func (s *Mock) List(prefix string, opts *store.ReadOptions) ([]*store.KVPair, error) {
 	if err := s.Error.List; err != nil {
 		return nil, err
 	}

@@ -7,8 +7,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/containous/traefik/integration/try"
-	"github.com/containous/traefik/testhelpers"
+	"github.com/manvalls/traefik/integration/try"
+	"github.com/manvalls/traefik/testhelpers"
 	"github.com/go-check/check"
 	checker "github.com/vdemeester/shakers"
 )

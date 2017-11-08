@@ -13,7 +13,7 @@ import (
 	"time"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/types"
 )
 
 type key string

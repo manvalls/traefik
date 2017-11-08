@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/containous/traefik/testhelpers"
+	"github.com/manvalls/traefik/testhelpers"
 	"github.com/stretchr/testify/assert"
 )
 

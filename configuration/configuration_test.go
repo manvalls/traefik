@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/containous/flaeg"
-	"github.com/containous/traefik/provider"
-	"github.com/containous/traefik/provider/file"
+	"github.com/manvalls/traefik/provider"
+	"github.com/manvalls/traefik/provider/file"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

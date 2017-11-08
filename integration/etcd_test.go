@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/containous/traefik/integration/try"
+	"github.com/manvalls/traefik/integration/try"
 	"github.com/docker/libkv"
 	"github.com/docker/libkv/store"
 	"github.com/docker/libkv/store/etcd"

@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/url"
 
-	"github.com/containous/traefik/log"
+	"github.com/manvalls/traefik/log"
 	"github.com/google/go-github/github"
 	goversion "github.com/hashicorp/go-version"
 )

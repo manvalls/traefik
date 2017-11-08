@@ -3,11 +3,11 @@
 <img src="docs/img/traefik.logo.png" alt="Træfik" title="Træfik" />
 </p>
 
-[![Build Status SemaphoreCI](https://semaphoreci.com/api/v1/containous/traefik/branches/master/shields_badge.svg)](https://semaphoreci.com/containous/traefik)
+[![Build Status SemaphoreCI](https://semaphoreci.com/api/v1/manvalls/traefik/branches/master/shields_badge.svg)](https://semaphoreci.com/manvalls/traefik)
 [![Docs](https://img.shields.io/badge/docs-current-brightgreen.svg)](https://docs.traefik.io)
-[![Go Report Card](https://goreportcard.com/badge/containous/traefik)](http://goreportcard.com/report/containous/traefik)
+[![Go Report Card](https://goreportcard.com/badge/manvalls/traefik)](http://goreportcard.com/report/manvalls/traefik)
 [![](https://images.microbadger.com/badges/image/traefik.svg)](https://microbadger.com/images/traefik)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/containous/traefik/blob/master/LICENSE.md)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/manvalls/traefik/blob/master/LICENSE.md)
 [![Join the chat at https://traefik.herokuapp.com](https://img.shields.io/badge/style-register-green.svg?style=social&label=Slack)](https://traefik.herokuapp.com)
 [![Twitter](https://img.shields.io/twitter/follow/traefikproxy.svg?style=social)](https://twitter.com/intent/follow?screen_name=traefikproxy)
 
@@ -112,13 +112,13 @@ You can access the simple HTML frontend of Træfik.
 
 ## Test it
 
-- The simple way: grab the latest binary from the [releases](https://github.com/containous/traefik/releases) page and just run it with the [sample configuration file](https://raw.githubusercontent.com/containous/traefik/master/traefik.sample.toml):
+- The simple way: grab the latest binary from the [releases](https://github.com/manvalls/traefik/releases) page and just run it with the [sample configuration file](https://raw.githubusercontent.com/manvalls/traefik/master/traefik.sample.toml):
 
 ```shell
 ./traefik --configFile=traefik.toml
 ```
 
-- Use the tiny Docker image and just run it with the [sample configuration file](https://raw.githubusercontent.com/containous/traefik/master/traefik.sample.toml):
+- Use the tiny Docker image and just run it with the [sample configuration file](https://raw.githubusercontent.com/manvalls/traefik/master/traefik.sample.toml):
 
 ```shell
 docker run -d -p 8080:8080 -p 80:80 -v $PWD/traefik.toml:/etc/traefik/traefik.toml traefik
@@ -127,7 +127,7 @@ docker run -d -p 8080:8080 -p 80:80 -v $PWD/traefik.toml:/etc/traefik/traefik.to
 - From sources:
 
 ```shell
-git clone https://github.com/containous/traefik
+git clone https://github.com/manvalls/traefik
 ```
 
 

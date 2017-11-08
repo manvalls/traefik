@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/types"
 	"github.com/prometheus/client_golang/prometheus"
 	dto "github.com/prometheus/client_model/go"
 )

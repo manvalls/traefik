@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/containous/traefik/integration/try"
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/integration/try"
+	"github.com/manvalls/traefik/types"
 	"github.com/docker/docker/pkg/namesgenerator"
 	"github.com/go-check/check"
 	d "github.com/libkermit/docker"

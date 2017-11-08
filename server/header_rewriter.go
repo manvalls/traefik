@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/containous/traefik/whitelist"
+	"github.com/manvalls/traefik/whitelist"
 	"github.com/vulcand/oxy/forward"
 )
 

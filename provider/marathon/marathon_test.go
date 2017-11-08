@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/containous/traefik/provider/marathon/mocks"
-	"github.com/containous/traefik/testhelpers"
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/provider/marathon/mocks"
+	"github.com/manvalls/traefik/testhelpers"
+	"github.com/manvalls/traefik/types"
 	"github.com/gambol99/go-marathon"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"

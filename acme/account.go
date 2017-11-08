@@ -13,7 +13,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/containous/traefik/log"
+	"github.com/manvalls/traefik/log"
 	"github.com/xenolf/lego/acme"
 )
 

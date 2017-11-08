@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/containous/traefik/safe"
+	"github.com/manvalls/traefik/safe"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/pkg/api"
 	"k8s.io/client-go/pkg/api/v1"
@@ -158,7 +158,7 @@ func (c *clientImpl) WatchAll(namespaces Namespaces, labelSelector string, stopC
 		informManager.extend(c.WatchObjects(ns, kindEndpoints, &v1.Endpoints{}, c.epStores, eventCh), true)
 		// Do not wait for the Secrets store to get synced since we cannot rely on
 		// users having granted RBAC permissions for this object.
-		// https://github.com/containous/traefik/issues/1784 should improve the
+		// https://github.com/manvalls/traefik/issues/1784 should improve the
 		// situation here in the future.
 		informManager.extend(c.WatchObjects(ns, kindSecrets, &v1.Secret{}, c.secStores, eventCh), false)
 	}

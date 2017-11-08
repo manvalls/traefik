@@ -5,10 +5,10 @@ import (
 	"time"
 
 	"github.com/cenk/backoff"
-	"github.com/containous/traefik/log"
-	"github.com/containous/traefik/safe"
-	"github.com/containous/traefik/types"
 	"github.com/docker/leadership"
+	"github.com/manvalls/traefik/log"
+	"github.com/manvalls/traefik/safe"
+	"github.com/manvalls/traefik/types"
 )
 
 // Leadership allows leadership election using a KV store

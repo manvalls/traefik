@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/NYTimes/gziphandler"
-	"github.com/containous/traefik/log"
+	"github.com/manvalls/traefik/log"
 )
 
 // Compress is a middleware that allows redirection

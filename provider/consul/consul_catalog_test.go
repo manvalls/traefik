@@ -7,7 +7,7 @@ import (
 	"text/template"
 
 	"github.com/BurntSushi/ty/fun"
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/types"
 	"github.com/hashicorp/consul/api"
 	"github.com/stretchr/testify/assert"
 )

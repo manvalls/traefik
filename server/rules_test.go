@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/containous/mux"
-	"github.com/containous/traefik/testhelpers"
+	"github.com/manvalls/traefik/testhelpers"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

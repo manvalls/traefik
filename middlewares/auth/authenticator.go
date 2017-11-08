@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	goauth "github.com/abbot/go-http-auth"
-	"github.com/containous/traefik/log"
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/log"
+	"github.com/manvalls/traefik/types"
 	"github.com/urfave/negroni"
 )
 

@@ -583,7 +583,7 @@ traefik --help
 
 ### Command: bug
 
-Here is the easiest way to submit a pre-filled issue on [Træfik GitHub](https://github.com/containous/traefik).
+Here is the easiest way to submit a pre-filled issue on [Træfik GitHub](https://github.com/manvalls/traefik).
 
 ```bash
 traefik bug

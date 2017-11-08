@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/types"
 	"github.com/davecgh/go-spew/spew"
 	docker "github.com/docker/docker/api/types"
 	dockertypes "github.com/docker/docker/api/types"

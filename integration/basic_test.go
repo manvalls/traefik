@@ -8,7 +8,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/containous/traefik/integration/try"
+	"github.com/manvalls/traefik/integration/try"
 	"github.com/go-check/check"
 	checker "github.com/vdemeester/shakers"
 )

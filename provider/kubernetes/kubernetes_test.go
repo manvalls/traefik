@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/types"
 	"github.com/stretchr/testify/assert"
 	"k8s.io/client-go/pkg/api/v1"
 	"k8s.io/client-go/pkg/apis/extensions/v1beta1"

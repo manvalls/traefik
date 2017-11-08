@@ -14,7 +14,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/types"
 	shellwords "github.com/mattn/go-shellwords"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

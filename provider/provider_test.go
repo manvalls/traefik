@@ -7,7 +7,7 @@ import (
 	"testing"
 	"text/template"
 
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/types"
 )
 
 type myProvider struct {

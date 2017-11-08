@@ -5,8 +5,8 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/containous/traefik/log"
-	"github.com/containous/traefik/whitelist"
+	"github.com/manvalls/traefik/log"
+	"github.com/manvalls/traefik/whitelist"
 	"github.com/pkg/errors"
 	"github.com/urfave/negroni"
 )

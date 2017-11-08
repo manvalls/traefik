@@ -3,7 +3,7 @@ package server
 import (
 	"net/http"
 
-	"github.com/containous/traefik/log"
+	"github.com/manvalls/traefik/log"
 )
 
 // OxyLogger implements oxy Logger interface with logrus.

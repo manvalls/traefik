@@ -10,8 +10,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/containous/traefik/integration/helloworld"
-	"github.com/containous/traefik/integration/try"
+	"github.com/manvalls/traefik/integration/helloworld"
+	"github.com/manvalls/traefik/integration/try"
 	"github.com/go-check/check"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"

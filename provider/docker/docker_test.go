@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/types"
 	docker "github.com/docker/docker/api/types"
 	"github.com/docker/docker/api/types/container"
 	"github.com/docker/go-connections/nat"

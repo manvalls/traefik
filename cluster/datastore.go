@@ -9,10 +9,10 @@ import (
 
 	"github.com/cenk/backoff"
 	"github.com/containous/staert"
-	"github.com/containous/traefik/job"
-	"github.com/containous/traefik/log"
-	"github.com/containous/traefik/safe"
 	"github.com/docker/libkv/store"
+	"github.com/manvalls/traefik/job"
+	"github.com/manvalls/traefik/log"
+	"github.com/manvalls/traefik/safe"
 	"github.com/satori/go.uuid"
 )
 
@@ -76,7 +76,7 @@ func NewDataStore(ctx context.Context, kvSource staert.KvSource, object Object, 
 
 func (d *Datastore) watchChanges() error {
 	stopCh := make(chan struct{})
-	kvCh, err := d.kv.Watch(d.lockKey, stopCh)
+	kvCh, err := d.kv.Watch(d.lockKey, stopCh, nil)
 	if err != nil {
 		return err
 	}

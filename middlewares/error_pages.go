@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/containous/traefik/log"
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/log"
+	"github.com/manvalls/traefik/types"
 	"github.com/vulcand/oxy/forward"
 	"github.com/vulcand/oxy/utils"
 )

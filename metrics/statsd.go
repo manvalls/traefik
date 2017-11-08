@@ -3,9 +3,9 @@ package metrics
 import (
 	"time"
 
-	"github.com/containous/traefik/log"
-	"github.com/containous/traefik/safe"
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/log"
+	"github.com/manvalls/traefik/safe"
+	"github.com/manvalls/traefik/types"
 	kitlog "github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/metrics/statsd"
 )

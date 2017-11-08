@@ -7,8 +7,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/containous/traefik/testhelpers"
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/testhelpers"
+	"github.com/manvalls/traefik/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/urfave/negroni"
 )

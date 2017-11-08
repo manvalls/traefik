@@ -7,8 +7,8 @@ import (
 	"os"
 	"sync"
 
-	"github.com/containous/traefik/cluster"
-	"github.com/containous/traefik/log"
+	"github.com/manvalls/traefik/cluster"
+	"github.com/manvalls/traefik/log"
 )
 
 var _ cluster.Store = (*LocalStore)(nil)

@@ -7,10 +7,10 @@ import (
 
 	"github.com/Sirupsen/logrus"
 	"github.com/cenk/backoff"
-	"github.com/containous/traefik/job"
-	"github.com/containous/traefik/log"
-	"github.com/containous/traefik/safe"
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/job"
+	"github.com/manvalls/traefik/log"
+	"github.com/manvalls/traefik/safe"
+	"github.com/manvalls/traefik/types"
 
 	rancher "github.com/rancher/go-rancher-metadata/metadata"
 )

@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/containous/traefik/log"
+	"github.com/manvalls/traefik/log"
 )
 
 // ReplacePathRegex is a middleware used to replace the path of a URL request with a regular expression

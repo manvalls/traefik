@@ -9,11 +9,11 @@ import (
 	"text/template"
 
 	"github.com/containous/flaeg"
-	"github.com/containous/traefik/cmd/traefik/anonymize"
+	"github.com/manvalls/traefik/cmd/traefik/anonymize"
 )
 
 const (
-	bugTracker  = "https://github.com/containous/traefik/issues/new"
+	bugTracker  = "https://github.com/manvalls/traefik/issues/new"
 	bugTemplate = `<!--
 DO NOT FILE ISSUES FOR GENERAL SUPPORT QUESTIONS.
 

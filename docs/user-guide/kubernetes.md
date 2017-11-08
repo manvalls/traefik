@@ -4,7 +4,7 @@ This guide explains how to use Træfik as an Ingress controller in a Kubernetes 
 
 If you are not familiar with Ingresses in Kubernetes you might want to read the [Kubernetes user guide](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 
-The config files used in this guide can be found in the [examples directory](https://github.com/containous/traefik/tree/master/examples/k8s)
+The config files used in this guide can be found in the [examples directory](https://github.com/manvalls/traefik/tree/master/examples/k8s)
 
 ## Prerequisites
 
@@ -63,10 +63,10 @@ subjects:
   namespace: kube-system
 ```
 
-[examples/k8s/traefik-rbac.yaml](https://github.com/containous/traefik/tree/master/examples/k8s/traefik-rbac.yaml)
+[examples/k8s/traefik-rbac.yaml](https://github.com/manvalls/traefik/tree/master/examples/k8s/traefik-rbac.yaml)
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/traefik-rbac.yaml
+kubectl apply -f https://raw.githubusercontent.com/manvalls/traefik/master/examples/k8s/traefik-rbac.yaml
 ```
 
 For namespaced restrictions, one RoleBinding is required per watched namespace along with a corresponding configuration of Træfik's `kubernetes.namespaces` parameter.
@@ -134,7 +134,7 @@ spec:
       name: admin
   type: NodePort
 ```
-[examples/k8s/traefik-deployment.yaml](https://github.com/containous/traefik/tree/master/examples/k8s/traefik-deployment.yaml)
+[examples/k8s/traefik-deployment.yaml](https://github.com/manvalls/traefik/tree/master/examples/k8s/traefik-deployment.yaml)
 
 !!! note
     The Service will expose two NodePorts which allow access to the ingress and the web interface.
@@ -200,16 +200,16 @@ spec:
   type: NodePort
 ```
 
-[examples/k8s/traefik-ds.yaml](https://github.com/containous/traefik/tree/master/examples/k8s/traefik-ds.yaml)
+[examples/k8s/traefik-ds.yaml](https://github.com/manvalls/traefik/tree/master/examples/k8s/traefik-ds.yaml)
 
 To deploy Træfik to your cluster start by submitting one of the YAML files to the cluster with `kubectl`:
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/traefik-deployment.yaml
+kubectl apply -f https://raw.githubusercontent.com/manvalls/traefik/master/examples/k8s/traefik-deployment.yaml
 ```
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/traefik-ds.yaml
+kubectl apply -f https://raw.githubusercontent.com/manvalls/traefik/master/examples/k8s/traefik-ds.yaml
 ```
 
 There are some significant differences between using Deployments and DaemonSets:
@@ -282,7 +282,7 @@ For more information, check out [the doc](https://github.com/kubernetes/charts/t
 
 ## Submitting An Ingress to the cluster.
 
-Lets start by creating a Service and an Ingress that will expose the [Træfik Web UI](https://github.com/containous/traefik#web-ui).
+Lets start by creating a Service and an Ingress that will expose the [Træfik Web UI](https://github.com/manvalls/traefik#web-ui).
 
 ```yaml
 apiVersion: v1
@@ -313,10 +313,10 @@ spec:
           serviceName: traefik-web-ui
           servicePort: 80
 ```
-[examples/k8s/ui.yaml](https://github.com/containous/traefik/tree/master/examples/k8s/ui.yaml)
+[examples/k8s/ui.yaml](https://github.com/manvalls/traefik/tree/master/examples/k8s/ui.yaml)
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/ui.yaml
+kubectl apply -f https://raw.githubusercontent.com/manvalls/traefik/master/examples/k8s/ui.yaml
 ```
 
 Now lets setup an entry in our /etc/hosts file to route `traefik-ui.minikube` to our cluster.
@@ -416,10 +416,10 @@ spec:
         ports:
         - containerPort: 80
 ```
-[examples/k8s/cheese-deployments.yaml](https://github.com/containous/traefik/tree/master/examples/k8s/cheese-deployments.yaml)
+[examples/k8s/cheese-deployments.yaml](https://github.com/manvalls/traefik/tree/master/examples/k8s/cheese-deployments.yaml)
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/cheese-deployments.yaml
+kubectl apply -f https://raw.githubusercontent.com/manvalls/traefik/master/examples/k8s/cheese-deployments.yaml
 ```
 
 Next we need to setup a service for each of the cheese pods.
@@ -472,10 +472,10 @@ spec:
     We also set a [circuit breaker expression](/basics/#backends) for one of the backends by setting the `traefik.backend.circuitbreaker` annotation on the service.
 
 
-[examples/k8s/cheese-services.yaml](https://github.com/containous/traefik/tree/master/examples/k8s/cheese-services.yaml)
+[examples/k8s/cheese-services.yaml](https://github.com/manvalls/traefik/tree/master/examples/k8s/cheese-services.yaml)
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/cheese-services.yaml
+kubectl apply -f https://raw.githubusercontent.com/manvalls/traefik/master/examples/k8s/cheese-services.yaml
 ```
 
 Now we can submit an ingress for the cheese websites.
@@ -511,13 +511,13 @@ spec:
           serviceName: wensleydale
           servicePort: http
 ```
-[examples/k8s/cheese-ingress.yaml](https://github.com/containous/traefik/tree/master/examples/k8s/cheese-ingress.yaml)
+[examples/k8s/cheese-ingress.yaml](https://github.com/manvalls/traefik/tree/master/examples/k8s/cheese-ingress.yaml)
 
 !!! note
     we list each hostname, and add a backend service.
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/cheese-ingress.yaml
+kubectl apply -f https://raw.githubusercontent.com/manvalls/traefik/master/examples/k8s/cheese-ingress.yaml
 ```
 
 Now visit the [Træfik dashboard](http://traefik-ui.minikube/) and you should see a frontend for each host.
@@ -565,13 +565,13 @@ spec:
           serviceName: wensleydale
           servicePort: http
 ```
-[examples/k8s/cheeses-ingress.yaml](https://github.com/containous/traefik/tree/master/examples/k8s/cheeses-ingress.yaml)
+[examples/k8s/cheeses-ingress.yaml](https://github.com/manvalls/traefik/tree/master/examples/k8s/cheeses-ingress.yaml)
 
 !!! note
     we are configuring Træfik to strip the prefix from the url path with the `traefik.frontend.rule.type` annotation so that we can use the containers from the previous example without modification.
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/cheeses-ingress.yaml
+kubectl apply -f https://raw.githubusercontent.com/manvalls/traefik/master/examples/k8s/cheeses-ingress.yaml
 ```
 
 ```shell

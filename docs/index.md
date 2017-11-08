@@ -2,10 +2,10 @@
 <img src="img/traefik.logo.png" alt="Træfik" title="Træfik" />
 </p>
 
-[![Build Status SemaphoreCI](https://semaphoreci.com/api/v1/containous/traefik/branches/master/shields_badge.svg)](https://semaphoreci.com/containous/traefik)
+[![Build Status SemaphoreCI](https://semaphoreci.com/api/v1/manvalls/traefik/branches/master/shields_badge.svg)](https://semaphoreci.com/manvalls/traefik)
 [![Docs](https://img.shields.io/badge/docs-current-brightgreen.svg)](https://docs.traefik.io)
-[![Go Report Card](https://goreportcard.com/badge/github.com/containous/traefik)](https://goreportcard.com/report/github.com/containous/traefik)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/containous/traefik/blob/master/LICENSE.md)
+[![Go Report Card](https://goreportcard.com/badge/github.com/manvalls/traefik)](https://goreportcard.com/report/github.com/manvalls/traefik)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/manvalls/traefik/blob/master/LICENSE.md)
 [![Join the chat at https://traefik.herokuapp.com](https://img.shields.io/badge/style-register-green.svg?style=social&label=Slack)](https://traefik.herokuapp.com)
 [![Twitter](https://img.shields.io/twitter/follow/traefikproxy.svg?style=social)](https://twitter.com/intent/follow?screen_name=traefikproxy)
 
@@ -84,7 +84,7 @@ You will learn fundamental Træfik features and see some demos with Kubernetes.
 
 ### Binary
 
-You can grab the latest binary from the [releases](https://github.com/containous/traefik/releases) page and just run it with the [sample configuration file](https://raw.githubusercontent.com/containous/traefik/master/traefik.sample.toml):
+You can grab the latest binary from the [releases](https://github.com/manvalls/traefik/releases) page and just run it with the [sample configuration file](https://raw.githubusercontent.com/manvalls/traefik/master/traefik.sample.toml):
 
 ```shell
 ./traefik -c traefik.toml

@@ -6,8 +6,8 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/containous/traefik/log"
-	"github.com/containous/traefik/metrics"
+	"github.com/manvalls/traefik/log"
+	"github.com/manvalls/traefik/metrics"
 	gokitmetrics "github.com/go-kit/kit/metrics"
 )
 

@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/ArthurHlt/go-eureka-client/eureka"
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/types"
 )
 
 func TestEurekaGetPort(t *testing.T) {

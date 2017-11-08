@@ -1,4 +1,4 @@
-package: github.com/containous/traefik
+package: github.com/manvalls/traefik
 ignore:
 - github.com/sirupsen/logrus
 import:

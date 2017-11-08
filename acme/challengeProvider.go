@@ -8,9 +8,9 @@ import (
 	"time"
 
 	"github.com/cenk/backoff"
-	"github.com/containous/traefik/cluster"
-	"github.com/containous/traefik/log"
-	"github.com/containous/traefik/safe"
+	"github.com/manvalls/traefik/cluster"
+	"github.com/manvalls/traefik/log"
+	"github.com/manvalls/traefik/safe"
 	"github.com/xenolf/lego/acme"
 )
 

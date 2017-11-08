@@ -1,7 +1,7 @@
 package metrics
 
 import (
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/types"
 	"github.com/go-kit/kit/metrics/prometheus"
 	stdprometheus "github.com/prometheus/client_golang/prometheus"
 )

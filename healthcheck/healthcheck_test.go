@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/containous/traefik/testhelpers"
+	"github.com/manvalls/traefik/testhelpers"
 	"github.com/vulcand/oxy/roundrobin"
 )
 

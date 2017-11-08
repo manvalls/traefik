@@ -16,7 +16,7 @@ Step 0 : FROM golang:1.9-alpine
  ---> 8c6473912976
 Step 1 : RUN go get github.com/Masterminds/glide
 [...]
-docker run --rm  -v "/var/run/docker.sock:/var/run/docker.sock" -it -e OS_ARCH_ARG -e OS_PLATFORM_ARG -e TESTFLAGS -v "/home/user/go/src/github.com/containous/traefik/"dist":/go/src/github.com/containous/traefik/"dist"" "traefik-dev:no-more-godep-ever" ./script/make.sh generate binary
+docker run --rm  -v "/var/run/docker.sock:/var/run/docker.sock" -it -e OS_ARCH_ARG -e OS_PLATFORM_ARG -e TESTFLAGS -v "/home/user/go/src/github.com/manvalls/traefik/"dist":/go/src/github.com/manvalls/traefik/"dist"" "traefik-dev:no-more-godep-ever" ./script/make.sh generate binary
 ---> Making bundle: generate (in .)
 removed 'gen.go'
 
@@ -31,7 +31,7 @@ traefik*
 ##### Setting up your `go` environment
 
 - You need `go` v1.9+
-- It is recommended you clone Træfik into a directory like `~/go/src/github.com/containous/traefik` (This is the official golang workspace hierarchy, and will allow dependencies to resolve properly)
+- It is recommended you clone Træfik into a directory like `~/go/src/github.com/manvalls/traefik` (This is the official golang workspace hierarchy, and will allow dependencies to resolve properly)
 - Set your `GOPATH` and `PATH` variable to be set to `~/go` via:
 
 ```bash
@@ -60,7 +60,7 @@ GORACE=""
 Once your environment is set up and the Træfik repository cloned you can build Træfik. You need get `go-bindata` once to be able to use `go generate` command as part of the build.  The steps to build are:
 
 ```bash
-cd ~/go/src/github.com/containous/traefik
+cd ~/go/src/github.com/manvalls/traefik
 
 # Get go-bindata. Please note, the ellipses are required
 go get github.com/jteeuwen/go-bindata/...
@@ -73,7 +73,7 @@ go build ./cmd/traefik
 # run other commands like tests
 ```
 
-You will find the Træfik executable in the `~/go/src/github.com/containous/traefik` folder as `traefik`.
+You will find the Træfik executable in the `~/go/src/github.com/manvalls/traefik` folder as `traefik`.
 
 ### Setting up `glide` and `glide-vc` for dependency management
 
@@ -108,13 +108,13 @@ integration test using the `test-integration` target.
 $ make test-unit
 docker build -t "traefik-dev:your-feature-branch" -f build.Dockerfile .
 # […]
-docker run --rm -it -e OS_ARCH_ARG -e OS_PLATFORM_ARG -e TESTFLAGS -v "/home/user/go/src/github/containous/traefik/dist:/go/src/github.com/containous/traefik/dist" "traefik-dev:your-feature-branch" ./script/make.sh generate test-unit
+docker run --rm -it -e OS_ARCH_ARG -e OS_PLATFORM_ARG -e TESTFLAGS -v "/home/user/go/src/github/manvalls/traefik/dist:/go/src/github.com/manvalls/traefik/dist" "traefik-dev:your-feature-branch" ./script/make.sh generate test-unit
 ---> Making bundle: generate (in .)
 removed 'gen.go'
 
 ---> Making bundle: test-unit (in .)
 + go test -cover -coverprofile=cover.out .
-ok      github.com/containous/traefik   0.005s  coverage: 4.1% of statements
+ok      github.com/manvalls/traefik   0.005s  coverage: 4.1% of statements
 
 Test success
 ```
@@ -140,7 +140,7 @@ More: https://labix.org/gocheck
 
 Unit tests can be run from the cloned directory by `$ go test ./...` which should return `ok` similar to:
 ```
-ok      _/home/user/go/src/github/containous/traefik    0.004s
+ok      _/home/user/go/src/github/manvalls/traefik    0.004s
 ```
 
 Integration tests must be run from the `integration/` directory and require the `-integration` switch to be passed like this: `$ cd integration && go test -integration ./...`.
@@ -157,7 +157,7 @@ You can test documentation using the `docs` target.
 $ make docs
 docker build -t traefik-docs -f docs.Dockerfile .
 # […]
-docker run  --rm -v /home/user/go/github/containous/traefik:/mkdocs -p 8000:8000 traefik-docs mkdocs serve
+docker run  --rm -v /home/user/go/github/manvalls/traefik:/mkdocs -p 8000:8000 traefik-docs mkdocs serve
 # […]
 [I 170828 20:47:48 server:283] Serving on http://0.0.0.0:8000
 [I 170828 20:47:48 handlers:60] Start watching changes

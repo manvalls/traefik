@@ -5,7 +5,7 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/containous/traefik/middlewares"
+	"github.com/manvalls/traefik/middlewares"
 )
 
 // RecordingErrorHandler is an error handler, implementing the vulcand/oxy

@@ -3,9 +3,9 @@ package main
 import (
 	"testing"
 
-	"github.com/containous/traefik/cmd/traefik/anonymize"
-	"github.com/containous/traefik/configuration"
-	"github.com/containous/traefik/provider/file"
+	"github.com/manvalls/traefik/cmd/traefik/anonymize"
+	"github.com/manvalls/traefik/configuration"
+	"github.com/manvalls/traefik/provider/file"
 	"github.com/stretchr/testify/assert"
 )
 

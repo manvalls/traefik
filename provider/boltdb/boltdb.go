@@ -3,10 +3,10 @@ package boltdb
 import (
 	"fmt"
 
-	"github.com/containous/traefik/provider"
-	"github.com/containous/traefik/provider/kv"
-	"github.com/containous/traefik/safe"
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/provider"
+	"github.com/manvalls/traefik/provider/kv"
+	"github.com/manvalls/traefik/safe"
+	"github.com/manvalls/traefik/types"
 	"github.com/docker/libkv/store"
 	"github.com/docker/libkv/store/boltdb"
 )

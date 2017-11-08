@@ -12,7 +12,7 @@ import (
 	"strings"
 
 	"github.com/containous/flaeg"
-	"github.com/containous/traefik/log"
+	"github.com/manvalls/traefik/log"
 	"github.com/docker/libkv/store"
 	"github.com/ryanuber/go-glob"
 )

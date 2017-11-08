@@ -9,9 +9,9 @@ import (
 	"time"
 
 	"github.com/containous/staert"
-	"github.com/containous/traefik/cluster"
-	"github.com/containous/traefik/integration/try"
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/cluster"
+	"github.com/manvalls/traefik/integration/try"
+	"github.com/manvalls/traefik/types"
 	"github.com/docker/libkv"
 	"github.com/docker/libkv/store"
 	"github.com/docker/libkv/store/consul"

@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/containous/traefik/safe"
-	"github.com/containous/traefik/types"
+	"github.com/manvalls/traefik/safe"
+	"github.com/manvalls/traefik/types"
 	"github.com/stretchr/testify/assert"
 )
 
